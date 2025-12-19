@@ -1,0 +1,263 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f455d;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 55px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Push page content below navbar */
+.content {
+    padding-top: 90px;
+    width: 90%;
+    margin: auto;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0f455d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    margin-top: 70px; /* pushes hero below fixed navbar */
+    background-size: cover;
+    background-image: url("res/AHero1.jpg");
+    background-position: center;
+/*    animation: bgShuffle 18s infinite linear;
+*/
+}
+
+
+/*
+
+
+    33%  { background-image: url("res/hero2.jpg"); }
+    66%  { background-image: url("res/hero3.jpg"); }
+    100% { background-image: url("res/hero1.jpg"); }
+
+    */
+
+/* Dark overlay for readability */
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+/* Text styling */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: left;
+    padding-left: 10%;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0 0 15px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.hero-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: white;
+    color: #0f455d;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    opacity: 0.8;
+}
+/* INFO SECTION */
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background-color: #0f455d; /* your brand color */
+    color: white;
+    gap: 40px;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.info-text p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 25px;
+}
+
+.info-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #ffffff;
+    color: #0f455d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.info-btn:hover {
+    opacity: 0.85;
+}
+
+/* IMAGE SIDE */
+.info-image {
+    flex: 1;
+}
+
+.info-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-text {
+        padding-bottom: 40px;
+    }
+
+    .info-image img {
+        max-width: 90%;
+    }
+}
+/* VIDEO + PODCAST SECTION */
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 10%;
+    background: #f1f3f5; /* light grey like your screenshot */
+    gap: 40px;
+}
+
+/* LEFT: YouTube responsive video */
+.video-left {
+    flex: 1;
+}
+
+.video-left iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 8px;
+}
+
+/* RIGHT: Podcast text */
+.video-text {
+    flex: 1;
+    color: #0f1a24; /* deep grey similar to screenshot */
+}
+
+.video-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.video-text p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.podcast-btn {
+    background: #0f455d; /* your brand color */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.podcast-btn:hover {
+    opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .video-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-left iframe {
+        height: 250px;
+    }
+}
+
