@@ -32,3 +32,8 @@
     display: none !important;
   }
 }
+@media (max-width: 468px) {
+  #aboutBTN {
+    display: none !important;
+  }
+}
