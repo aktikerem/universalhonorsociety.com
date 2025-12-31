@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UHS</title>
+    <meta name="referrer" content="origin-when-cross-origin">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="c_style.css">
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="res/log.png" class="logo" alt="Logo">
+
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html" >Projects</a></li>
+                <li><a href="history.html" >History</a></li>
+		        <li><a href="constitution.html" class="current-page">Constitution</a></li>
+		        <li><a href="#">Contact</a></li>
+
+	    </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- PAGE CONTENT -->
+    <!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+	    <h1>Be Constitutional.<br> Be More.</h1>
+        <p>yazi bu yukari ve burayada</p>
+        <a href="#" class="hero-btn">Access PDF →</a>
+    </div>
+
+</section>
+    <!-- INFO SECTION WITH TEXT LEFT / IMAGE RIGHT -->
+<section class="info-section">
+ 
+    <div class="info-text">
+        <h2>Our Constitution</h2>
+
+        <p>
+       
+        
+    </div>
+            
+
+<div id="my-pdf"></div>
+
+ 
+</section>
+    <!-- FOOTER -->
+    <footer class="footer">
+	    <p>© 2025 United Honor Society <br>  coperight (all copes reserved)</p>
+    </footer>
+
+</body>
+</html>
+
+<script src="https://unpkg.com/pdfobject"></script>
+<script>PDFObject.embed("/res/ConstitutionoftheUniversalHonorSociety.pdf", "#my-pdf");</script>

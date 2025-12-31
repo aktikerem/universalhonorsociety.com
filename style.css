@@ -129,6 +129,34 @@ body, html {
 .hero-btn:hover {
     opacity: 0.8;
 }
+/* about SECTION */
+
+.about {
+    background: #f1f3f5;
+    display: flex;
+    justify-content: flex-end;
+    padding: 80px 8vw;
+}
+
+.about-container {
+    max-width: 900px;
+    text-align: justify;
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+
+
+
 /* INFO SECTION */
 .info-section {
     display: flex;
@@ -181,6 +209,7 @@ body, html {
     border-radius: 10px;
     object-fit: cover;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
@@ -244,11 +273,18 @@ body, html {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s ease;
+    border-top: 20px;
 }
 
 .podcast-btn:hover {
     opacity: 0.85;
 }
+
+.nav-links a.current-page {
+    color: #6dd2fd;       /* blue */
+    font-weight: 600;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {

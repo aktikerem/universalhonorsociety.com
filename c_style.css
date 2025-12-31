@@ -1,0 +1,11 @@
+.hero {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    margin-top: 70px; /* pushes hero below fixed navbar */
+    background-size: cover;
+    background-image: url("res/CHero1.png");
+    background-position: center;
+/*    animation: bgShuffle 18s infinite linear;
+*/
+}
