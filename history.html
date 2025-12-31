@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="h_style.css">
+    <link rel="stylesheet" href="footer.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
 
 </head>
 <body>
@@ -22,7 +27,7 @@
                 <li><a href="projects.html" >Projects</a></li>
                 <li><a href="#" class="current-page">History</a></li>
 		        <li><a href="constitution.html">Constitution</a></li>
-		        <li><a href="#">Contact</a></li>
+		        <li><a id="scrol2contact" href="">Contact</a></li>
 
 	    </ul>
         </div>
@@ -61,9 +66,36 @@
  
 </section>
     <!-- FOOTER -->
-    <footer class="footer">
-	    <p>© 2025 United Honor Society <br>  coperight (all copes reserved)</p>
-    </footer>
+    <footer id="footer" class="footer">
+        <div>
+  <div class="footer-content">
 
+
+    <div class="footer-item">
+      <i class="fa-solid fa-phone"></i>
+      <span>+90 (530) 729 58 09</span>
+    </div>
+    <div class="footer-item">
+      <i class="fa-solid fa-phone"></i>
+      <span>+1 (818) 297-6420</span>
+    </div>
+
+    <div class="footer-item">
+      <i class="fa-solid fa-envelope"></i>
+      <span>universalhonorsociety.uhs@gmail.com</span>
+    </div>
+  </div>
+  </div>
+  <div>
+    	    <p>🄯 2025 United Honor Society <br> No rights reserved </p>
+
+  </div>
+    </footer>
+<script>
+document.getElementById("scrol2contact").addEventListener("click", e => {
+    e.preventDefault();
+    document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+});
+</script>
 </body>
 </html>

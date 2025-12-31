@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="c_style.css">
+    <link rel="stylesheet" href="footer.css">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
 
 </head>
 <body>
@@ -22,7 +27,7 @@
                 <li><a href="projects.html" >Projects</a></li>
                 <li><a href="history.html" >History</a></li>
 		        <li><a href="constitution.html" class="current-page">Constitution</a></li>
-		        <li><a href="#">Contact</a></li>
+		        <li><a id="scrol2contact" href="">Contact</a></li>
 
 	    </ul>
         </div>
@@ -38,7 +43,7 @@
     <div class="hero-text">
 	    <h1>Be Constitutional.<br> Be More.</h1>
         <p>yazi bu yukari ve burayada</p>
-        <a href="#" class="hero-btn">Access PDF →</a>
+        <a href="https://universalhonorsociety.com/res/ConstitutionoftheUniversalHonorSociety.pdf" class="hero-btn">Access PDF →</a>
     </div>
 
 </section>
@@ -58,9 +63,31 @@
 
  
 </section>
-    <!-- FOOTER -->
-    <footer class="footer">
-	    <p>© 2025 United Honor Society <br>  coperight (all copes reserved)</p>
+     <!-- FOOTER -->
+    <footer id="footer" class="footer">
+        <div>
+  <div class="footer-content">
+
+
+    <div class="footer-item">
+      <i class="fa-solid fa-phone"></i>
+      <span>+90 (530) 729 58 09</span>
+    </div>
+    <div class="footer-item">
+      <i class="fa-solid fa-phone"></i>
+      <span>+1 (818) 297-6420</span>
+    </div>
+
+    <div class="footer-item">
+      <i class="fa-solid fa-envelope"></i>
+      <span>universalhonorsociety.uhs@gmail.com</span>
+    </div>
+  </div>
+  </div>
+  <div>
+    	    <p>🄯 2025 United Honor Society <br> No rights reserved </p>
+
+  </div>
     </footer>
 
 </body>
@@ -68,3 +95,9 @@
 
 <script src="https://unpkg.com/pdfobject"></script>
 <script>PDFObject.embed("/res/ConstitutionoftheUniversalHonorSociety.pdf", "#my-pdf");</script>
+<script>
+document.getElementById("scrol2contact").addEventListener("click", e => {
+    e.preventDefault();
+    document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+});
+</script>
