@@ -25,7 +25,8 @@ body, html {
 }
 
 .logo {
-    height: 55px;
+    height: 63px;
+    margin: -4px;
 }
 
 .nav-links {
